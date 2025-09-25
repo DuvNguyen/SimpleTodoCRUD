@@ -108,7 +108,7 @@ npm run dev
 ```
 
 Mở trình duyệt:  
-👉 [http://localhost:5173](http://localhost:5173)
+[http://localhost:5173](http://localhost:5173)
 
 ---
 
