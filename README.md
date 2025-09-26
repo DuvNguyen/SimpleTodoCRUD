@@ -169,6 +169,8 @@ Mở trình duyệt:
 
 ### Frontend (Vercel)
 
+Đã deploy và có sẵn tại: https://simple-todo-crud.vercel.app/
+
 * Framework: Vite
 * Root Directory: `client`
 * Build Command: `npm run build`
