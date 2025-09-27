@@ -1,3 +1,94 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Container chính */
+.todo-card {
+  @apply bg-white shadow-lg rounded-xl p-6 max-w-2xl mx-auto mt-8;
+}
+
+/* Header */
+.todo-header {
+  @apply text-3xl font-bold text-blue-600 mb-6 flex items-center gap-2;
+}
+
+/* Add bar */
+.add-bar {
+  @apply flex mb-4 shadow rounded-lg overflow-hidden;
+}
+.add-input {
+  @apply flex-1 px-4 py-2 outline-none border;
+}
+.add-date {
+  @apply px-2 border;
+}
+.add-btn {
+  @apply bg-green-500 text-white px-4 hover:bg-green-600 transition;
+}
+
+/* Stats */
+.todo-stats {
+  @apply flex justify-between text-sm mb-4;
+}
+.todo-done {
+  @apply text-green-600 font-semibold;
+}
+.todo-pending {
+  @apply text-red-600 font-semibold;
+}
+
+/* Filters */
+.filter-group {
+  @apply flex gap-2 mb-4;
+}
+.filter-btn {
+  @apply px-3 py-1 rounded-full text-sm bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+.filter-btn-active {
+  @apply bg-blue-600 text-white;
+}
+
+/* Date filter */
+.date-filter {
+  @apply flex gap-2 mb-4;
+}
+.date-filter input {
+  @apply border p-2 rounded;
+}
+
+/* Todo list */
+.todo-list {
+  @apply space-y-2 mb-4;
+}
+.todo-item {
+  @apply flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm;
+}
+.todo-title {
+  @apply text-gray-800;
+}
+.todo-title-done {
+  @apply line-through text-gray-400;
+}
+.todo-due {
+  @apply ml-2 text-xs text-gray-500;
+}
+.todo-actions {
+  @apply flex gap-3;
+}
+.todo-action {
+  @apply text-sm hover:underline;
+}
+.todo-action.done {
+  @apply text-green-600;
+}
+.todo-action.delete {
+  @apply text-red-500;
+}
+
+/* Pagination */
+.pagination {
+  @apply flex justify-center gap-4 mt-6 items-center;
+}
+.pagination button {
+  @apply px-3 py-1 border rounded disabled:opacity-50;
+}
